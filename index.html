@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>OnePage</title>
+		<link rel="stylesheet" href="themes/search_theme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		
+		<link rel="stylesheet" href="main_styles.css" />
+		<style>
+		
+		</style>
+		
+
+	</head>
+	<body onload="init()">
+        
+        <script type="text/javascript">
+            app.initialize();
+			
+			
+        </script>
+        <script type="text/javascript">
+		
+			$(document).ready(function(){
+			  $('#btn_busca').click(function(){
+				/*$('#titulo_interior').text("hola");*/
+				carga($('#lname').val());
+			  });
+			});
+			
+		    function init() {
+				var tem = "steve jobs";
+				carga(tem);
+			}		
+
+			function carga(tema){
+			    var url_news = "http://www.bing.com/news/search?q=" + tema;
+				var url_search = "http://www.bing.com/search?q=" + tema;
+				var url_img = "http://www.bing.com/images/search?q=" + tema;
+				var url_video = "http://www.bing.com/videos/search?q=" + tema;
+				var url_twit = "http://www.bing.com/search?q=twitter " + tema;
+				var url_face = "http://www.bing.com/search?q=facebook " + tema;
+				
+				$('#frame_news').attr("src",url_news);
+				$('#frame_search').attr("src",url_search);
+				$('#frame_img').attr("src",url_img);
+				$('#frame_video').attr("src",url_video);
+				$('#frame_twit').attr("src",url_twit);
+				$('#frame_face').attr("src",url_face);
+				
+				$('#ver_tema').html(tema);
+			}
+			
+			
+			
+			
+        </script>
+		
+
+        <div data-role="page" id="one">
+
+            <div data-role="header" data-position="fixed">
+                
+            </div><!-- /header -->
+
+            <div data-role="content" >
+                
+				<div id="titulo_interior"><h1>OnePage</h1></div>
+				<div class="mycss">
+					Resúmen de la web en una página.
+					</br>
+					Web - Noticias - Imagenes - Videos - Facebook - Twitter
+					</br>
+				</div>
+				</br>
+				<div id="busca_tema">
+				<div class="mycss2">
+					Elemento: <input type="text" name="lname" id="lname"><br>
+				</div>
+				<p><a href="" data-role="button" id="btn_busca">Informar</a></p>
+				</div>
+				<div id="ver_tema"></div>
+				
+				<div id="content">
+					<!-- frame news -->
+					<div id="gnews" class="gnews">
+					<iframe id="frame_news" class="frame_news" ></iframe>
+					</div>
+					
+					<!-- frame search -->
+					<div id="bsearch" >
+					<iframe id="frame_search" ></iframe>
+					</div>
+					
+					<!-- frame img -->
+					<div id="bimg" >
+					<iframe id="frame_img" ></iframe>
+					</div>
+					
+					<!-- frame video -->
+					<div id="bvideo" >
+					<iframe id="frame_video" ></iframe>
+					</div>
+					
+					<!-- frame twitter -->
+					<div id="btwit" >
+					<iframe id="frame_twit" ></iframe>
+					</div>
+					
+					<!-- frame face -->
+					<div id="bface" >
+					<iframe id="frame_face" ></iframe>
+					</div>
+				</div>
+
+                <p><a href="#two" data-role="button" data-transition="turn">Elegir Fuente</a></p>
+
+            </div><!-- /content -->
+
+            <div data-role="navbar" data-position="fixed">
+                <ul>
+                    <li><a href="http://nomadesoft.tumblr.com/" class="ui-btn-active">Nomade</a></li>
+                    <li><a href="http://twitter.com">Twitter</a></li>
+                    <li><a href="https://play.google.com/store/apps/developer?id=nomade&hl=es">Más Apps</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /page one -->
+
+
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="two" data-theme="a">
+
+            <div data-role="header" data-position="fixed">
+                <h1>Noticias</h1>
+            </div><!-- /header -->
+
+            <div data-role="content" data-theme="a">
+                <div data-role="controlgroup">
+                    <a href="https://twitter.com/search?q=@clarincom" data-role="button">Clarín</a>
+                    <a href="http://twitter.com/intent/user?screen_name=lanacion24" data-role="button">La Nación</a>
+                    <a href="http://twitter.com/intent/user?screen_name=infobae" data-role="button">InfoBae</a>
+                    <a href="http://twitter.com/intent/user?screen_name=pagina12noof" data-role="button">Página 12</a>
+                    <a href="http://twitter.com/intent/user?screen_name=tiempoarg" data-role="button">Tiempo Argentino</a>
+                    <a href="http://twitter.com/intent/user?screen_name=crónicaweb" data-role="button">Crónica</a>
+                    <a href="https://twitter.com/search?q=noticias%2C+%23CFK" data-role="button">Busqueda ejemplo</a>
+                </div>
+            </div><!-- /content -->
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" class="ui-btn-active">Nomade</a></li>
+                    <li><a href="http://twitter.com" class="ui-btn-active">Twitter</a></li>
+                    <li><a href="https://play.google.com/store/apps/developer?id=nomade&hl=es" class="ui-btn-active">Más Apps</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /page two -->
+
+
+
+    </body>
+</html>
