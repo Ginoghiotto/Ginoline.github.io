@@ -1,0 +1,114 @@
+{
+container: {
+type: "TableContainer",
+title: "Promocion!",
+tabImage: {
+Type: "ImageView",
+path: "facturacion_normal2.png"
+},
+logo: {
+Type: "ImageView",
+path: "testIcon.png"
+},
+components: [
+{
+type: "ComplexComponent",
+bounds: {
+left: 10,
+right: 10,
+top: 10,
+bottom: 0
+},
+border: {
+size: 1,
+radius: 4,
+color: "#C5C5C5"
+},
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font align='center' size=30>Tienda de equipos Personal</font>"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+bounds: {
+left: 10,
+right: 10,
+top: 20,
+bottom: 0
+},
+text: "<font align='center' color='#00FF00' size=72>2x1</font>"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+bounds: {
+left: 10,
+right: 10,
+top: 30,
+bottom: 2
+},
+text: "<font align='center' color='#C0C0C0' size=10>Promocion no valida para las provincias de Cordoba y Tierra Del Fuego</font>"
+},
+{
+type: "ButtonComponent",
+title: "Lanzar nueva pagina",
+events: [
+{
+action: {
+type: "LaunchContainerAction",
+url: "https://dl.dropboxusercontent.com/u/46681115/bandar/recursoDemo.txt"
+},
+type: "TapEvent"
+}
+],
+bounds: {
+left: 10,
+right: 10,
+top: 30,
+bottom: 0
+}
+},
+{
+type: "ButtonComponent",
+title: "Ejecutar BackToRootAction",
+events: [
+{
+action: {
+type: "BackToRootAction"
+},
+type: "TapEvent"
+}
+],
+bounds: {
+left: 10,
+right: 10,
+top: 30,
+bottom: 0
+}
+},
+{
+type: "ButtonComponent",
+title: "Ejecutar ResetFlowAction",
+events: [
+{
+action: {
+type: "ResetFlowAction"
+},
+type: "TapEvent"
+}
+],
+bounds: {
+left: 10,
+right: 10,
+top: 30,
+bottom: 0
+}
+}
+]
+}
+]
+}
+}
