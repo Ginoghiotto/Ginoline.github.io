@@ -1,0 +1,792 @@
+{
+container: {
+leftContainer: {
+type: "TableContainer",
+backgroundColor: "#ff0000",
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=20><b>Opcion 1</b></font>"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+backgroundColor: "#CCCCCC",
+text: "<font face='Roboto-Regular' align='center' size=20><b>Opcion 2</b></font>"
+}
+]
+},
+contentContainer: {
+type: "MultiContainer",
+logo: {
+type: "ImageView",
+uri: "https://dl.dropboxusercontent.com/u/46681115/bandar/club_logo_home.png",
+mode: "ASPECT_FILL"
+},
+containers: [
+{
+type: "TableContainer",
+urlFragments: "https://dl.dropboxusercontent.com/u/46681115/bandar/mockupsDemoApp/fragmentExampleResponse.txt",
+title: "Primer Tab",
+analyticsPageViewID: "Primer Tab",
+debug: true,
+tabImage: {
+type: "ImageView",
+path: "consumos_normal.png",
+mode: "FIT"
+},
+footer: [
+{
+type: "BannerComponent",
+subType: "AdMob",
+bannerId: "ca-app-pub-4971626846782273/6285896940"
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "bar_color.png",
+mode: "FILL"
+}
+}
+],
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font color='#FF0000' align='right' face='Platform-Light'>This is red, </font><b>bold</b> and <i>italic</i> text",
+backgroundColor: "#00FF00"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font color='#FF0000' face='Platform-Hairline'>This is red, </font><b>bold</b> and <i>italic</i> text",
+backgroundColor: "#00FFFF"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font color='#FF0000' face='Roboto-Regular'>This is red, </font><b>bold</b> and <i>italic</i> text"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font color='#FF0000' face='Roboto-Light'>This is red, </font><b>bold</b> and <i>italic</i> text"
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font color='#FF0000' face='HelveticaNeue-Light'>This is red, </font><b>bold</b> and <i>italic</i> text"
+},
+{
+type: "ButtonComponent",
+title: "Abir banner",
+events: [
+{
+action: {
+type: "LaunchContainerAction",
+url: "https://dl.dropboxusercontent.com/u/46681115/bandar/recursoDemo.txt"
+},
+type: "TapEvent"
+}
+],
+bounds: {
+left: 10,
+right: 10,
+top: 20,
+bottom: 20
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<center><font face='Roboto-Thin' size=35 color='#017d85'>$ </font> <font face='Roboto-Thin' size=70 color='#017d85'>0,00</font></center>",
+backgroundColor: "#FFFF00",
+events: [
+{
+action: {
+type: "LaunchContainerAction",
+url: "https://dl.dropboxusercontent.com/u/46681115/bandar/recursoDemo.txt"
+},
+type: "TapEvent"
+}
+]
+},
+{
+type: "FragmentComponent",
+idFragment: "fragmentExample",
+hasError: true,
+bounds: {
+top: "24",
+left: "24",
+bottom: "24",
+right: "24"
+},
+border: {
+color: "#ff0000",
+radius: 5,
+size: 1
+}
+},
+{
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+backgroundColor: "#3E3D3D",
+border: {
+color: "#ffffff",
+radius: 5,
+size: 1
+},
+bounds: {
+top: "0",
+left: "24",
+bottom: "24",
+right: "24"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='left' size=17 color='#ffffff'><b>Saldo actual</b></font>",
+bounds: {
+bottom: "24",
+top: "24",
+right: "24",
+left: "24"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=22 color='#ffffff'>$100</font>",
+bounds: {
+bottom: "24",
+top: "24",
+right: "0",
+left: "0"
+}
+}
+]
+}
+}
+]
+},
+{
+type: "TableContainer",
+title: "Segundo Tab",
+analyticsPageViewID: "Segundo Tab",
+debug: true,
+footer: [
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "bar_color.png",
+mode: "FIT"
+}
+}
+],
+components: [
+{
+type: "SeparatorComponent",
+backgroundColor: "#FFFF00"
+},
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.5",
+bounds: {
+top: "12",
+left: "0",
+bottom: "0",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#00ff00",
+radius: 5,
+size: 3
+},
+bounds: {
+top: "6",
+left: "6",
+bottom: "6",
+right: "6"
+},
+containerFragment: {
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.8",
+bounds: {
+top: "6",
+left: "0",
+bottom: "6",
+right: "0"
+},
+leftComponent: {
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>500</b></font><br><font face='Roboto-Light' align='center' size=18 color='#000000'>Minutos disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+rightComponent: {
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_servicies_next.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+}
+]
+}
+},
+rightComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#00ff00",
+radius: 5,
+size: 3
+},
+bounds: {
+top: "6",
+left: "6",
+bottom: "6",
+right: "6"
+},
+containerFragment: {
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.8",
+bounds: {
+top: "6",
+left: "0",
+bottom: "6",
+right: "0"
+},
+leftComponent: {
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>185</b></font><br><font face='Roboto-Light' align='center' size=18 color='#808080'>SMS disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+rightComponent: {
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_servicies_next.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+}
+]
+}
+}
+},
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.5",
+bounds: {
+top: "12",
+left: "0",
+bottom: "0",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#00ff00",
+radius: 5,
+size: 3
+},
+bounds: {
+top: "6",
+left: "6",
+bottom: "6",
+right: "6"
+},
+containerFragment: {
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.8",
+bounds: {
+top: "6",
+left: "0",
+bottom: "6",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+bounds: {
+top: "2",
+left: "2",
+bottom: "2",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>500</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#000000'>Minutos disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "carro_pressed.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+},
+rightComponent: {
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_servicies_next.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+}
+]
+}
+},
+rightComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#00ff00",
+radius: 5,
+size: 3
+},
+bounds: {
+top: "6",
+left: "6",
+bottom: "6",
+right: "6"
+},
+containerFragment: {
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.8",
+bounds: {
+top: "6",
+left: "0",
+bottom: "6",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+bounds: {
+top: "2",
+left: "2",
+bottom: "2",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>185</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#808080'>SMS disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_pack_icon_cart.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+},
+rightComponent: {
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_servicies_next.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+}
+]
+}
+}
+},
+{
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#0000ff",
+radius: 5,
+size: 3
+},
+bounds: {
+top: "6",
+left: "6",
+bottom: "6",
+right: "6"
+},
+containerFragment: {
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.5",
+bounds: {
+top: "12",
+left: "0",
+bottom: "0",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#808080",
+radius: 5,
+size: 1
+},
+bounds: {
+top: "0",
+left: "2",
+bottom: "2",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>500</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#000000'>Minutos disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "carro_pressed.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+},
+rightComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#808080",
+radius: 5,
+size: 1
+},
+bounds: {
+top: "0",
+left: "2",
+bottom: "0",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>185</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#808080'>SMS disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_pack_icon_cart.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+}
+}
+]
+}
+}
+]
+},
+{
+type: "TableContainer",
+title: "Tercer Tab",
+analyticsPageViewID: "Tercer Tab",
+debug: true,
+footer: [
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "bar_color.png",
+mode: "FULL"
+}
+}
+],
+components: [
+{
+type: "DoubleComponent",
+leftViewWidthRatio: "0.5",
+bounds: {
+top: "12",
+left: "0",
+bottom: "0",
+right: "0"
+},
+leftComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#808080",
+radius: 5,
+size: 1
+},
+bounds: {
+top: "0",
+left: "2",
+bottom: "2",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>500</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#000000'>Minutos disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "carro_pressed.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+},
+rightComponent: {
+type: "FragmentComponent",
+idFragment: "fragmentCargado",
+border: {
+color: "#808080",
+radius: 5,
+size: 1
+},
+bounds: {
+top: "0",
+left: "2",
+bottom: "0",
+right: "2"
+},
+containerFragment: {
+components: [
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Regular' align='center' size=26 color='#00B4C5'><b>185</b></font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "2",
+left: "2"
+}
+},
+{
+type: "TextComponent",
+subType: "Custom",
+text: "<font face='Roboto-Light' align='center' size=18 color='#808080'>SMS disponibles</font>",
+bounds: {
+bottom: "2",
+top: "2",
+right: "0",
+left: "0"
+}
+},
+{
+type: "ImageComponent",
+image: {
+type: "ImageView",
+path: "active_pack_icon_cart.png",
+mode: "FIT"
+},
+bounds: {
+bottom: "1",
+top: "1",
+right: "1",
+left: "1"
+}
+}
+]
+}
+}
+}
+]
+}
+]
+}
+}
+}
